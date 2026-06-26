@@ -17,9 +17,10 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://debate-ui-bgo9.vercel.app",  
-        "http://localhost:5173",               
-    ],
+    "https://nexus-clash.vercel.app",
+    "https://debate-ui-bgo9.vercel.app",
+    "http://localhost:5173",
+     ],
     allow_credentials=False,   
     allow_methods=["POST", "OPTIONS"],
     allow_headers=["Content-Type"],
