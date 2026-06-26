@@ -53,7 +53,7 @@ async def run_debate_lifecycle(topic: str, agent_a: str, agent_b: str, total_rou
         return
 
     # Using the fast & highly capable reasoning preview model
-    model = genai.GenerativeModel('gemini-2.5-flash-preview-09-2025')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     
     # Store transcript history to pass as context
     debate_history = []
